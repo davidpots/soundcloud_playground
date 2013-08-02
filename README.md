@@ -29,3 +29,8 @@ A hurdle I ran into with the URL above is not having the JSON ID for the object 
 
 When you run any of the `curl` commands above, you'll get a super concise bit of output that give you the JSON ID for the user/track/whatever in question. From there, you can use that ID to get info on that object using whatever you like from the API Reference page above.
 
+#### What to do next...
+
+First project will likely be hardwiring a small number of Soundcloud tracks into a page, and then focusing on skinning the player with some other light visual design / front-end experiments.
+
+Second project will explore getting getting the Soundcloud content spit out in JSON format, where I can step back from the lame hardwiring of tracks/sets into whatever I build. This will be necessary for a larger-scale project I have in mind (that will involve a large and ever growing amount of Soundcloud recordings). From here, I can explore using things like Angular / Node / etc.
