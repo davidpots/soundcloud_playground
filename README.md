@@ -1,5 +1,12 @@
 This is an in-progress project to help me get off the ground with the Soundcloud API, formatting the Soundcloud player, and the like. 
 
+#### Getting Started with a Custom Player
+
+To get into skinning the Soundcloud player with CSS, this seems like a great starting point:
+
+    https://github.com/soundcloud/soundcloud-custom-player
+
+Aside from getting a few JS files linked up, the project lets you easily view some example HTML pages showing different player styles. Players are shown for individual tracks, all tracks from a certain user, and for a set/playlist. You can turn off styling to see what the base HTML elements are in play for the player. Plenty to sink one's teeth into.
 
 #### API Reference
 
