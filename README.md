@@ -1,20 +1,31 @@
-# Welcome to Wisp
-
-Wisp is a super-lightweight HTML framework, with index.html already linking to CSS and JS files. It is intentionally simple and intended to help you quickly start any HTML project or prototype.
-
-### Usage instructions
-
-Clone or download the Wisp project from GitHub. Open the index.html file in your project directory and edit away. As desired, utilize the main.css and main.js files which have already been created for you. Build quickly, learn, and have fun.
+This is an in-progress project to help me get off the ground with the Soundcloud API, formatting the Soundcloud player, and the like. 
 
 
-### Why I made Wisp
+#### API Reference
 
-Very often I want to dive immediately into a project requiring a vanilla HTML/CSS/JS setup, and I grew tired of having to dig up the proper structure for including jQuery or the proper meta tags or having a mega-basic CSS framework in place. While tons of great frameworks are already out there, they all seem like overkill given what I need. 
+To get an idea of what the Soundcloud API can do, check this out: 
 
-I wanted to make something myself, as lightweight as possible, built entirely for my needs. I may repeating the work others have already done, in main respects -- but I'm also getting good experience in creating this and putting it to use.
+    http://developers.soundcloud.com/docs/api/reference
+    
+It shows how I can retrieve info about a user, a track, a playlist, and so on. Mostly this is promising for what is possible -- not sure how much of this I'll use out of the gate (or on my first SC project).
 
-### Acknowledgements
+### Your Soundcloud User / App Info
 
-Thanks to Adam Whitcroft and Dan Eden whose similar projects inspired me to make this. Thanks to Brent Jackson for inspiring me to build + share more useful code things.
+This wasn't super obvious. To find your client ID and manage your Soundcloud apps, go here:
 
-Any comments or questions you may have are welcome. Email me at davidpots@gmail.com.
+    http://soundcloud.com/you/apps
+
+### Get me the JSON ID!
+
+A hurdle I ran into with the URL above is not having the JSON ID for the object I was interested in (my account, one of my tracks, one of my playlists, etc). The way to get the JSON ID you need is with this `resolve` command:
+
+    # for a user
+    curl 'http://api.soundcloud.com/resolve.json?url=http://soundcloud.com/davidpots&client_id=YOUR_CLIENT_ID'
+    
+    # for a track
+    curl 'http://api.soundcloud.com/resolve.json?url=http://soundcloud.com/davidpots&client_id=YOUR_CLIENT_ID'
+    
+    # etc
+
+When you run any of the `curl` commands above, you'll get a super concise bit of output that give you the JSON ID for the user/track/whatever in question. From there, you can use that ID to get info on that object using whatever you like from the API Reference page above.
+
