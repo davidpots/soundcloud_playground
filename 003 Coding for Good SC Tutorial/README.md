@@ -18,7 +18,8 @@ And then everything works.
 
 ### To do next
 
-Check out this "Coding for GOOD" webpage, and try to get their example fully working (the YouTube video didn't work with the genre selector -- it always returned 'punk' as per his example).
+Check out this wiki:
 
-    http://cfg.good.is/challenges/soundcloud-api
-    
+    https://github.com/soundcloud/soundcloud-custom-player/wiki
+
+And read up on the part about initializing the player yourself. Pass the player a identifier of the song you want to play, somehow, and rock it.    
