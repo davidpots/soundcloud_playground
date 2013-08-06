@@ -21,29 +21,45 @@ function playSomeMusic(myGenre) {
   );
 }
 
-
+// Play by genre, via HTML class
 $(document).ready(function(){
   $('.genre').click(function(){
-    alert('dog');
+    var genre = $(this).text();
+    playSomeMusic(genre)
     return false;
   });
 });
 
+// Play random song from a predefined set / playlist
+
+function playSet() {
+  SC.initialize({
+    client_id: '4a01792d7496116664999da099ce9b6f'
+  });
+
+  SC.get('/playlists/8587894', {limit: 1},
+    function(tracks) {
+      SC.oEmbed(tracks.permalink_url, document.getElementById("target"));
+    });
+}
 
 
 
-// 
-// window.onload = function () {
-//   SC.initialize({
-//     client_id: '4a01792d7496116664999da099ce9b6f'
-//   });
-//   
-//   var menuLinks = document.getElementsByClassName('genre');
-//   for (var i = 0; i < menuLinks.length; i++) {
-//     var menuLink = menuLinks[i];
-//     menuLink.onclick = function(e) {
-//       e.preventDefault();
-//       playSomeSound(menuLink.innerHTML);
-//     };
-//   }
-// };
+
+
+
+// Attempt to hard-wire songs via passing JSON id
+$(document).ready(function(){
+  $('.unique').click(function(e){
+    e.preventDefault();
+    var song = $(this).text();
+    // Play a hardwired song
+      SC.initialize({
+        client_id: '4a01792d7496116664999da099ce9b6f'
+      });
+      SC.get('/tracks/' + song, {limit: 1},
+        function(tracks) {
+          SC.oEmbed(tracks.permalink_url, {auto_play: true}, document.getElementById("target"));
+        });
+  });
+});

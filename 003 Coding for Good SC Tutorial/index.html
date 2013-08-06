@@ -20,18 +20,32 @@
     <script src="javascript/main.js"></script>
 
   </head>
-  <body onload="playSomeMusic('electronic')">
+  <body>
 
     <div class="section">
       <div class="content">
         <h1>Coding for Good Soundcloud Tutorial</h1>
         <p>via <a href="http://cfg.good.is/challenges/soundcloud-api">http://cfg.good.is/challenges/soundcloud-api</a></p>
-        <br />
+        <h3>play genre, via HTML onclick</h3>
         <ul>
-          <li><a href="#" class="genre">disco</a></li>
+          <li><a href="#" onclick="playSomeMusic('country')">disco</a></li>
           <li><a href="#" onclick="playSomeMusic('country')">country</a></li>
           <li><a href="#" onclick="playSomeMusic('rock')">rock</a></li>
           <li><a href="#" onclick="playSomeMusic('electronic')">electro/nic<a></li>
+        </ul>
+        <h3>play genre, via HTML class</h3>
+        <ul>
+          <li><a href="#" class="genre">disco</a></li>
+          <li><a href="#" class="genre">country</a></li>
+          <li><a href="#" class="genre">rock</a></li>
+          <li><a href="#" class="genre">electronic</a></li>
+        </ul>
+        <h3>play a predefined playlist</h3>
+        <p>Go ahead, <a href="#" onclick="playSet(); return false;">play it!</a></p>
+        <h3>Hard-wired songs</h3>
+        <ul>
+          <li>Hotel Hell: <a href="#" class="unique">103957591</a></li>
+          <li>Ancestor Radio: <a href="#" class="unique">103957556</a></li>
         </ul>
         <div id="target"></div>
       </div> <!-- end: .content -->

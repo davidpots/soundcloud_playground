@@ -10,4 +10,6 @@ Exploring what is out there. Custom JS Soundcloud Player, intro to the API and S
 
 A bit more focused intro to using the Javascript SDK to load SC content onto a page: individual tracks, all tracks from a user, the hottest SC track at the time, etc.
 
-#### ...
+#### 003 "Coding for Good" Soundcloud Tutorial
+
+Tutorial and spinoff, via http://cfg.good.is/challenges/soundcloud-api
