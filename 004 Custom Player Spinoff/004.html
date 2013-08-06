@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width">
+
+    <!-- Page Title -->
+    <title>Soundcloud API</title>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="004.css">
+    <link rel="stylesheet" href="css/sc/sc-player-standard.css" type="text/css">
+
+    <!-- Google Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,800,700,600,300' rel='stylesheet' type='text/css'>
+
+    <!-- Javascript -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <script src="//connect.soundcloud.com/sdk.js"></script>
+    <script type="text/javascript" src="js/soundcloud.player.api.js"></script>
+    <script type="text/javascript" src="js/sc-player.js"></script>
+    <script src="js/004.js"></script>
+
+  </head>
+  <body>
+
+    <div class="section">
+      <div class="content">
+        <h1>Coding for Good Soundcloud Tutorial</h1>
+        <p>via <a href="http://cfg.good.is/challenges/soundcloud-api">http://cfg.good.is/challenges/soundcloud-api</a></p>
+        <h3>play specific song, via jQuery data rel thing</h3>
+        <ul>
+          <li><a href="#" class="remote-song" data-song-id="103957591">Hotel Hell</a></li>
+          <li><a href="#" class="remote-song" data-song-id="103957551">A Place Called Firefly Grove</a></li>
+          <li><a href="#" class="remote-song" data-song-id="103957585">The Hat Man</a></li>
+          <li><a href="#" class="remote-song" data-song-id="103957613">Sinai High</a></li>
+          <li><a href="#" class="remote-song" data-song-id="103957579">Chester Wheaton</a></li>
+          <li><a href="#" class="remote-song" data-song-id="103957604">Roxy Epoxy</a></li>
+          <li><a href="#" class="remote-song" data-song-id="103957620">Song for the Fallen Tree</a></li>
+          <li><a href="#" class="remote-song" data-song-id="103957556">Ancestor Radio</a></li>
+          <li><a href="#" class="remote-song" data-song-id="103957572">Cafe on the Hill</a></li>
+        </ul>
+
+        <div id="target"></div>
+        <a href="https://soundcloud.com/davidpots/sets/firefly-grove" class="sc-player">My new dub track</a>
+      </div> <!-- end: .content -->
+    </div> <!-- end: .section -->
+
+  </body>
+</html>
