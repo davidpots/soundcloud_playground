@@ -18,8 +18,18 @@ function playSomeMusic(myGenre) {
         SC.oEmbed(track_url, {auto_play: true, color: "ff0066"},
           document.getElementById("target"));
         }
-  );  
+  );
 }
+
+
+$(document).ready(function(){
+  $('.genre').click(function(){
+    alert('dog');
+    return false;
+  });
+});
+
+
 
 
 // 
