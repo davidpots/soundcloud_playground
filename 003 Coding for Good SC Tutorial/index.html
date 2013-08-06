@@ -20,17 +20,20 @@
     <script src="javascript/main.js"></script>
 
   </head>
-  <body>
+  <body onload="playSomeMusic('electronic')">
 
     <div class="section">
       <div class="content">
-        <h1>SC Javascript SDK Playground</h1>
+        <h1>Coding for Good Soundcloud Tutorial</h1>
+        <p>via <a href="http://cfg.good.is/challenges/soundcloud-api">http://cfg.good.is/challenges/soundcloud-api</a></p>
+        <br />
         <ul>
-          <li><a href="#" id="getHottest">Get "hottest" track</a></li>
-          <li><a href="#" id="getLatestTrackFromUser">Get latest track from a user</a></li>
-          <li><a href="#" id="getTrackFromURL">Get Track from URL</a></li>
+          <li><a href="#" onclick="playSomeMusic('disco')">disco</a></li>
+          <li><a href="#" onclick="playSomeMusic('country')">country</a></li>
+          <li><a href="#" onclick="playSomeMusic('rock')">rock</a></li>
+          <li><a href="#" onclick="playSomeMusic('electronic')">electro/nic<a></li>
         </ul>
-        <div id="track"></div>
+        <div id="target"></div>
       </div> <!-- end: .content -->
     </div> <!-- end: .section -->
 
